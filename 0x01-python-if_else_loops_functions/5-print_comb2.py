@@ -8,4 +8,3 @@ for i in range(100):
         print("{}".format(99))
     else:
         print("{:02},".format(i), end=" ")
-print()
