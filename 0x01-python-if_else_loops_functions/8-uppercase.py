@@ -12,7 +12,7 @@ def uppercase(str):
     """ Prints a string in uppercase followed by a new line """
     # Check is the string is empty
     if str == "":
-        print()
+        return ""
     else:
         for char in str:
             # Convert string to ASCII code
