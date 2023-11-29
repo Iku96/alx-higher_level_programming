@@ -21,5 +21,5 @@ def uppercase(str):
                 asciiCode = asciiCode - 32
             # Convert ASCII back to characters
             char = chr(asciiCode)
-            print(f"{char}", end="")
+            print("{}".format(char), end="")
     print()
