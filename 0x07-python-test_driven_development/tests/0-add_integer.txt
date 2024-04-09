@@ -1,0 +1,36 @@
+The ``0-add_integer`` module
+============================
+Using ``add_integer``
+
+This function adds two integers together.
+
+    Args:
+        a (int): The first number to be added.
+        b (int): The second number to be added.
+    Returns:
+        The sum of a and b (a + b)
+
+First import ``add_integer`` from the module ``0-add_integer``:
+
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+Now, use it:
+    # Our function correctly adds two integers:
+    >>> add_integer(10, 5)
+    15
+
+    # Our function correctly converts floats to int:
+    >>> add_integer(10, 5.5)
+    15
+
+    #Our function correctly raises a type error when you add an integer to a string:
+    >>> add_integer(4, "school")
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
+
+    >>> add_integer(None)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
