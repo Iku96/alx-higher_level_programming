@@ -1,0 +1,50 @@
+The ``2- matrix_divided`` module
+============================
+Using ``matrix_divided``
+
+This function divides all elements of a matrix
+
+    Args:
+        matrix: The matrix who elements are to be divided.
+        div: the number that the elements of the matrix are divided to.
+    Returns:
+        A new matrix whose elements are the dividends of the original matrix and div.
+
+First import ``matrix_divided`` from the module ``2-matrix_divided``:
+
+    >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+Now, use it:
+    # Our correctly checks if div is not equal to zero
+    >>> matrix = [[1, 2, 3, 4],[5, 6, 7]]
+    >>> matrix_divided(matrix, 0)
+    Traceback (most recent call last):
+    ...
+    ZeroDivisionError: division by zero
+
+    # Our function checks if it's a list of integers or floats. Otherwise it rases a TypeError:
+    >>> matrix = [[1, 2, "school"],[4, 5, 6]]
+    >>> matrix_divided(matrix, 5)
+    Traceback (most recent call last):
+    ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+    # Our function correctly checks if all rows are the same size
+    >>> matrix = [[1, 2, 3, 4],[5, 6, 7]]
+    >>> matrix_divided(matrix, 3)
+    Traceback (most recent call last):
+    ...
+    TypeError: Each row of the matrix must have the same size
+
+    # Our function correctly checks if div is a number (int or float)
+    >>> matrix = [[1, 2, 3, 4],[5, 6, 7]]
+    >>> matrix_divided(matrix, "5")
+    Traceback (most recent call last):
+    ...
+    TypeError: div must be a number
+
+    # Our function correctly returns the output rounded to 2 decimal places
+    >>> matrix = [[1, 2, 3],[4, 5, 6]]
+    >>> matrix_divided(matrix, 3)
+    [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
