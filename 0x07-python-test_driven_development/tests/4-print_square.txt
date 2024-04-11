@@ -1,0 +1,40 @@
+The ``4-print_square`` module
+============================
+Using ``print_square``
+
+This function prints a square with the character #
+
+    Args:
+        size: The size of the square.
+    Returns:
+        None.
+
+First import ``print_square`` from the module ``4-print_square``:
+
+    >>> print_square = __import__('4-print_square').print_square
+
+Now, use it:
+    # Our function correctly prints a square using the character #.
+    >>> print_square(3)
+    ###
+    ###
+    ###
+
+    # Our function correctly checks if size is an integer:
+    >>> print_square("Bob")
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer
+
+    # Our function correctly checks that size > 0
+    >>> print_square(-1)
+    Traceback (most recent call last):
+    ...
+    ValueError: size must be >= 0
+
+    # If size is a float and size < 0, our functions correctly raises an error
+    >>> print_square(-1.1)
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer
+
