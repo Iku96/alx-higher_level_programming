@@ -1,0 +1,38 @@
+The ``5-text_indentation`` module
+============================
+Using ``text_indentation``
+
+This function prints a text with two new lines after
+        each of these characters: ".", "?", ":"
+
+    Args:
+        text: The text to be rearranged
+    Returns:
+        None.
+
+First import ``text_indentation`` from the module ``5-text_indentation``:
+
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Now, use it:
+    # Our function only accepts strings.
+    >>> text_indentation("Hello")
+    Hello
+
+    # When input is not a string, our function will raise a Type Error
+    >>> text_indentation(5)
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
+
+    # Our function will trim out extra white space around characters:
+    >>> text_indentation("\nThis string has space between punctuations ? .  :\n")
+    <BLANKLINE>
+    This string has space between punctuations?
+    <BLANKLINE>
+    .
+    <BLANKLINE>
+    :
+    <BLANKLINE>
+    <BLANKLINE>
+
