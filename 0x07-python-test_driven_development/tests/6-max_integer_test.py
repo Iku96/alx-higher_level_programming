@@ -22,6 +22,8 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer([-1, -2, -3, -4]), -1)
         # List with the same integers
         self.assertEqual((max_integer([4, 4, 4, 4])), 4)
+        # Max integer is in the middle
+        self.assertEqual(max_integer([1, 2, 4, 3, 1]), 4)
 
     # How does the function handle Non-integer values?
     def test_non_integer(self):
