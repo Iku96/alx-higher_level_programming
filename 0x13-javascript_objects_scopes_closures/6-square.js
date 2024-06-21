@@ -7,7 +7,7 @@ module.exports = class Square extends require('./5-square') {
       for (let height = 0; height < this.height; height++) {
         let rectangle = '';
         for (let width = 0; width < this.width; width++) {
-          rectangle += 'c';
+          rectangle += c;
         }
         console.log(rectangle);
       }
