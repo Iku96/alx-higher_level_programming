@@ -14,7 +14,7 @@ function starwars () {
     }
 
     // Find the movie matching the episode ID.
-    
+
     if (body && body.title) {
       console.log(body.title); // Prints the title of the movie
     } else {
