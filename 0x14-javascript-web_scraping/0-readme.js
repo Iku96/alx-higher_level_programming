@@ -8,11 +8,11 @@ const filepath = process.argv[2];
 
 // Reading the file with utf-8 encoding
 fs.readFile(filepath, 'utf8', (err, data) => {
-    if (err) {
-        // If an error occurs, it will print the error obj
-        console.log(err);
-    } else {
-        // If no errors occur, it will print the file content
-        console.log(data);
-    }
-})
+  if (err) {
+    // If an error occurs, it will print the error obj
+    console.log(err);
+  } else {
+    // If no errors occur, it will print the file content
+    console.log(data);
+  }
+});
