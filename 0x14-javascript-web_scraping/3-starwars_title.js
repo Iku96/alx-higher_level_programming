@@ -14,7 +14,7 @@ function starwars () {
     }
 
     // Find the movie matching the episode ID.
-    const movie = response.body.results.find(film => film.episode_id === movieID);
+    const movie = response.body.results.find(film => film.episode_id == movieID);
 
     if (movie) {
       console.log(movie.title); // Prints the title of the movie
