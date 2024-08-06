@@ -13,7 +13,7 @@ function starwars () {
       return;
     }
 
-    fs.writeFile(filepath, 'utf-8', body, (err) => {
+    fs.writeFile(filepath, body, 'utf8', (err) => {
       if (err) {
         console.error('Error writing to the file', err);
       }
