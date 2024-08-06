@@ -13,12 +13,10 @@ function starwars () {
       return;
     }
 
-    fs.writeFile(filepath, body, (err) => {
+    fs.writeFile(filepath, 'utf-8', body, (err) => {
       if (err) {
         console.error('Error writing to the file', err);
-        return;
       }
-      console.log(`webpage content saved to ${filepath}`);
     });
   });
 }
