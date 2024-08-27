@@ -1,0 +1,31 @@
+Test Cases for MyList Class
+
+1. **Test Initialization**
+   - **Description**: Create an instance of MyList and verify it is an instance of the list class.
+   - **Input**: my_list = MyList()
+   - **Expected Output**: my_list should be an instance of MyList, and it should be of type list.
+
+2. **Test Print Sorted with Empty List**
+   - **Description**: Test the print_sorted method on an empty MyList instance.
+   - **Input**: my_list = MyList(); my_list.print_sorted()
+   - **Expected Output**: An empty list should be printed, i.e., `[]`.
+
+3. **Test Print Sorted with Unsorted List**
+   - **Description**: Test the print_sorted method on a MyList instance with unsorted elements.
+   - **Input**: my_list = MyList(); my_list.extend([3, 1, 2]); my_list.print_sorted()
+   - **Expected Output**: The sorted list should be printed, i.e., `[1, 2, 3]`.
+
+4. **Test Print Sorted with Already Sorted List**
+   - **Description**: Test the print_sorted method on a MyList instance with an already sorted list.
+   - **Input**: my_list = MyList(); my_list.extend([1, 2, 3]); my_list.print_sorted()
+   - **Expected Output**: The sorted list should be printed, i.e., `[1, 2, 3]`.
+
+5. **Test Print Sorted with Repeated Elements**
+   - **Description**: Test the print_sorted method on a MyList instance with repeated elements.
+   - **Input**: my_list = MyList(); my_list.extend([2, 3, 2, 1, 1]); my_list.print_sorted()
+   - **Expected Output**: The sorted list with repeated elements should be printed, i.e., `[1, 1, 2, 2, 3]`.
+
+6. **Test Print Sorted with Negative Numbers**
+   - **Description**: Test the print_sorted method on a MyList instance with negative numbers.
+   - **Input**: my_list = MyList(); my_list.extend([-1, -3, -2]); my_list.print_sorted()
+   - **Expected Output**: The sorted list with negative numbers should be printed, i.e., `[-3, -2, -1]`.
