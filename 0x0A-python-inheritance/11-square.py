@@ -24,7 +24,8 @@ class BaseGeometry:
         is not implemented.
 
         Raises:
-            Exception: Always raised with the message 'area() is not implemented'.
+            Exception: Always raised with the message
+            'area() is not implemented'.
         """
         raise Exception('area() is not implemented')
 
@@ -65,9 +66,9 @@ class Rectangle(BaseGeometry):
             TypeError: If `width` or `height` is not an integer.
             ValueError: If `width` or `height` is not greater than 0.
         """
-        super().__init__()
         self.integer_validator("width", width)
         self.integer_validator("height", height)
+        super().__init__()
         self.__width = width
         self.__height = height
 
@@ -108,8 +109,8 @@ class Square(Rectangle):
             TypeError: If `size` is not an integer.
             ValueError: If `size` is not greater than 0.
         """
-        super().__init__(size, size)
         self.integer_validator("size", size)
+        super().__init__(size, size)
         self.__size = size
 
     def area(self):

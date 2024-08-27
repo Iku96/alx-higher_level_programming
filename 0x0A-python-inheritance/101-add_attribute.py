@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-This module provides a function to add a new attribute to an object dynamically.
+This module provides a function to add
+a new attribute to an object dynamically.
 """
 
 

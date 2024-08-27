@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """
-This module defines a custom integer class MyInt that inherits from the built-in
-int class. The class overrides the equality comparison methods to invert their
-behavior.
+This module defines a custom integer class MyInt
+that inherits from the built-in int class.
+The class overrides the equality comparison methods to
+invert their behavior.
 """
 
 
