@@ -16,5 +16,5 @@ def lookup(obj):
         list: A list containing a single list of strings, each representing
         an attribute or method name available in the object.
     """
-    result = [dir(obj)]
+    result = dir(obj)
     return result
