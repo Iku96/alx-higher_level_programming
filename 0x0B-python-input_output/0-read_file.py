@@ -15,6 +15,6 @@ def read_file(filename=""):
     :return:
         No return.
     """
-    with open(filename, "w+", encoding="UTF8") as f:
+    with open(filename, encoding="UTF8") as f:
         fileContents = f.read()
         print(fileContents, end="")
