@@ -10,11 +10,11 @@ def read_file(filename=""):
     Reads the contents of a file with UTF-8 encoding and prints them
     to the console
     :param
-        filename (str): The name of the file to read. if no filename is provided,
-        it defaults to an empty string.
+        filename (str): The name of the file to read.
+        if no filename is provided, it defaults to an empty string.
     :return:
         No return.
     """
-    with open(filename, encoding="UTF8") as f:
+    with open(filename, "w+", encoding="UTF8") as f:
         fileContents = f.read()
-        print(fileContents)
+        print(fileContents, end="")
