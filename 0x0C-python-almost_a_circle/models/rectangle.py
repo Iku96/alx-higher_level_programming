@@ -71,3 +71,6 @@ class Rectangle(Base):
             self.__y = y
         else:
             raise ValueError(f"{self.__y} cannot be negative")
+
+
+print(issubclass(Rectangle, Base))
