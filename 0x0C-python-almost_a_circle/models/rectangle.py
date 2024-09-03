@@ -2,19 +2,7 @@
 """Rectangle class
 inherits from Base class
 """
-
-
-class Base:
-    """The base class
-    """
-    __nb_objects = 0
-
-    def __init__(self, id=None):
-        if id is not None:
-            self.id = id
-        else:
-            Base.__nb_objects += 1
-            self.id = Base.__nb_objects
+from models.base import Base
 
 
 class Rectangle(Base):
@@ -71,6 +59,3 @@ class Rectangle(Base):
             self.__y = y
         else:
             raise ValueError(f"{self.__y} cannot be negative")
-
-
-print(issubclass(Rectangle, Base))
