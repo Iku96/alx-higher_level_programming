@@ -18,6 +18,9 @@ class Base:
 
 
 class Rectangle(Base):
+    """
+    Class Rectangle, that inherits from base
+    """
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
         self.__width = width
@@ -68,15 +71,3 @@ class Rectangle(Base):
             self.__y = y
         else:
             raise ValueError(f"{self.__y} cannot be negative")
-
-
-if __name__ == "__main__":
-
-    r1 = Rectangle(10, 2)
-    print(r1.id)
-
-    r2 = Rectangle(2, 10)
-    print(r2.id)
-
-    r3 = Rectangle(10, 2, 0, 0, 12)
-    print(r3.id)
