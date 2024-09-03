@@ -16,13 +16,17 @@ class Rectangle(Base):
         Args:
             width (int): The width of the rectangle.
             height (int): The height of the rectangle.
-            x (int, optional): The x-coordinate of the rectangle. Defaults to 0.
-            y (int, optional): The y-coordinate of the rectangle. Defaults to 0.
-            id (int, optional): The unique identifier of the rectangle. Defaults to None.
+            x (int, optional): The x-coordinate of the rectangle.
+            Defaults to 0.
+            y (int, optional): The y-coordinate of the rectangle.
+            Defaults to 0.
+            id (int, optional): The unique identifier of the rectangle.
+            Defaults to None.
 
         Raises:
             TypeError: If width, height, x, or y is not an integer.
-            ValueError: If width or height is less than or equal to 0, or if x or y is less than 0.
+            ValueError: If width or height is less than or equal to 0,
+            or if x or y is less than 0.
         """
         super().__init__(id)
         if type(width) is not int:
@@ -49,7 +53,8 @@ class Rectangle(Base):
     @property
     def width(self):
         """
-        Getter method for the width attribute of the Rectangle class.
+        Getter method for the width attribute of the
+        Rectangle class.
 
         Returns:
             int: The width of the rectangle.
@@ -62,7 +67,8 @@ class Rectangle(Base):
         Sets the width of the rectangle.
 
         Args:
-            width (int): The width of the rectangle. It must be an integer and greater than 0.
+            width (int): The width of the rectangle.
+            It must be an integer and greater than 0.
 
         Raises:
             TypeError: If width is not an integer.
@@ -91,7 +97,8 @@ class Rectangle(Base):
         Sets the height of the rectangle.
 
         Args:
-            height (int): The height of the rectangle. Must be an integer greater than 0.
+            height (int): The height of the rectangle.
+            Must be an integer greater than 0.
 
         Raises:
             TypeError: If height is not an integer.
@@ -139,7 +146,8 @@ class Rectangle(Base):
     @property
     def y(self):
         """
-        Getter method for the y attribute of the Rectangle class.
+        Getter method for the y attribute of the
+        Rectangle class.
 
         Returns:
             int: The value of the y attribute.
@@ -149,7 +157,8 @@ class Rectangle(Base):
     @y.setter
     def y(self, y):
         """
-        Sets the value of the y attribute of the Rectangle instance.
+        Sets the value of the y attribute of the
+        Rectangle instance.
 
         Args:
             y (int): The new value of y.
