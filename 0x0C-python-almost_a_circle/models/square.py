@@ -25,8 +25,6 @@ class Square(Rectangle):
             Defaults to None.
         """
         super().__init__(size, size, x, y, id)
-        self.__x = x
-        self.__y = y
 
     def __str__(self):
         """Returns a string representation of the square
@@ -34,7 +32,7 @@ class Square(Rectangle):
         Returns:
             str: A string in the format '[Square] id x/y - size'.
         """
-        return f"[Square] ({self.id}) {self.__x}/{self.__y} - " \
+        return f"[Square] ({self.id}) {self.x}/{self.y} - " \
                f"{self.width}"
 
     @property
@@ -51,3 +49,15 @@ class Square(Rectangle):
         else:
             self.width = size
             self.height = size
+
+    def update(self, *args, **kwargs):
+        """Updates the attributes of a square"""
+        attributes = ['id', 'size', 'x', 'y']
+
+        for i, arg in enumerate(args):
+            if i < len(attributes):
+                setattr(self, attributes[i], arg)
+
+        for key, value in kwargs.items():
+            if key in attributes:
+                setattr(self, key, value)
