@@ -4,8 +4,6 @@ Base class
 """
 import json
 
-from django.template.context_processors import static
-
 
 class Base:
     """The base class
