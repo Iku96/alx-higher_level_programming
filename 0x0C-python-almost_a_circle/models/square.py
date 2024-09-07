@@ -62,7 +62,6 @@ class Square(Rectangle):
             if key in attributes:
                 setattr(self, key, value)
 
-
     def to_dictionary(self):
         """Returns a dictionary representation"""
         return {
